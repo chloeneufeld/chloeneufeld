@@ -1,0 +1,38 @@
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
+
+{{ define "main" }}
+
+<div>
+    <div class="listHeader">
+        <h1>{{ .Title }}</h1>
+    </div>
+
+    {{ with .Content }}
+    <div class="listContent">
+        {{- . -}}
+    </div>
+    {{ end }}
+
+    <div>
+        {{ range .Pages.ByDate.Reverse }}
+
+        <a href="{{ .Permalink }}">
+            <!-- [html-validate-disable-next prefer-native-element] -->
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">{{ .Title }}</span>
+                </div>
+                <div class="postExcerpt">
+                    <p>{{ .Summary }}</p>
+                </div>
+            </div>
+        </a>
+
+
+        {{end}}
+    </div>
+</div>
+
+{{ end }}

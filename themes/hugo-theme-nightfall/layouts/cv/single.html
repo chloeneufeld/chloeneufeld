@@ -1,0 +1,17 @@
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
+
+{{ define "main" }}
+<div class="postHeader">
+    <h1>{{ .Title }}</h1>
+
+        <div class="">
+            {{ .Params.education1 }}
+            {{ .Params.education1_year }}
+        </div>
+
+
+    
+
+{{ end }}

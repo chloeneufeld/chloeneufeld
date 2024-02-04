@@ -1,0 +1,15 @@
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
+
+{{ define "main" }}
+<div class="postHeader">
+    <h1>{{ .Title }}</h1>
+</div>
+
+    <div class="column left"> <img src="{{.Params.image}}" width="250px" style="float: left; padding: 20px 0px 0px 0px;"/> </div>
+    
+    <div class="postWrapper">{{ .Content }} </div>
+</div>
+
+{{ end }}
