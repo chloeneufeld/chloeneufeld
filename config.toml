@@ -1,0 +1,55 @@
+baseURL = 'http://chloeneufeld.github.io/'
+languageCode = 'en-us'
+theme = "hugo-theme-nightfall"
+title = 'my hugo site
+
+[menu]
+  [[menu.header]]
+    name = "publications"
+    weight = 2
+    url = "publications"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+  [[menu.header]]
+    name = "research"
+    weight = 3
+    url = "research"
+  [[menu.header]]
+    name = "teaching"
+    weight = 4
+    url = "teaching"
+  [[menu.header]]
+    name = "cv"
+    weight = 5
+    url = "cv/neufeld_cv_02_2024.pdf"
+
+
+[params]
+user = "chloeneufeld"
+hostname = "github.io"
+  [params.author]
+    name = "Chloe Neufeld"  # Website and RSS feed author
+    email = "chloe.neufeld@yale.edu"  # RSS feed email address
+    img = "chloe_neufeld.jpg"
+    description = "Yale Astronomy Graduate Student"
+
+readingTime = false  # Show reading time on post page
+published = false  # Show published data on post page
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/chloeneufeld"
+
+[[params.social]]
+key = 1
+name = "twitter"
+url = "https://www.twitter.com/cakneufeld"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:chloe.neufeld@yale.edu"
+
