@@ -13,13 +13,13 @@ title = 'my hugo site'
     weight = 1
     url = "about"
   [[menu.header]]
-    name = "research"
+    name = "projects"
     weight = 3
-    url = "research"
+    url = "projects"
   [[menu.header]]
-    name = "teaching"
+    name = "community"
     weight = 4
-    url = "teaching"
+    url = "community"
   [[menu.header]]
     name = "cv"
     weight = 5
@@ -29,6 +29,7 @@ title = 'my hugo site'
 [params]
 user = "chloeneufeld"
 hostname = "github.io"
+footerHtml = '© 2024 Chloe Neufeld'
   [params.author]
     name = "Chloe Neufeld"  # Website and RSS feed author
     email = "chloe.neufeld@yale.edu"  # RSS feed email address

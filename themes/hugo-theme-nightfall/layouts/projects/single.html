@@ -1,0 +1,19 @@
+{{ define "title"}}
+{{ .Title }} | {{ .Site.Params.author.name }}
+{{ end }}
+
+{{ define "main" }}
+<div class="postWrapper">
+    <h1>{{ .Title }}</h1>
+    <div>
+        {{ .Content }}
+    </div>
+
+    <figure>  
+        <img src="{{.Params.image}}" style="float: center; width: 75%; padding: 5px 15px 0px 0px;" alt="Paper figure" /> 
+        <figcaption>{{ .Params.caption }}</figcaption>
+    </figure>
+    
+</div>
+
+{{ end }}

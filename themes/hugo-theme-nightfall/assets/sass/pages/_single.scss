@@ -2,7 +2,7 @@
 
 .postWrapper {
     text-align: left;
-    padding: 0px;    
+    padding: 30px;    
 }
 
 .postHeader {
@@ -25,10 +25,12 @@ dt, dd {
 dl {
     display: grid;
     grid-template-columns: max-content auto;
+
 }
 
 dt {
     grid-column-start: 1;
+
 }
 
 dd {
@@ -47,6 +49,7 @@ dt::after {
 
 .left {
     width: 35%;
+    padding: 15px;
 }
 
 .right {
@@ -57,7 +60,7 @@ dt::after {
 .cvWrapper {
     background-color: $backgroundDarker;
     text-align: left;
-    padding: 10px;  
+    padding: 15px;  
     font-family: $fontCode;
     display: block;
 

@@ -22,7 +22,7 @@
 .headerLinks {
   ul {
     list-style: none;
-    padding: 0;
+    padding: 7px;
     margin: 0;
     li {
       display: inline;
@@ -77,7 +77,7 @@
 }
 
 .side-menu:checked ~ .headerLinks {
-  max-height: 100%;
+  max-height: 30%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
@@ -91,7 +91,7 @@
   top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .headerLinks {
     width: 100%;
     height: 100%;
